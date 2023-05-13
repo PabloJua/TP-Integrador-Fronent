@@ -1,0 +1,24 @@
+.btn-card {
+    font-size: x-small;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.btn-about {
+    border-radius: 3px;
+    font-size: small;
+    background: none;
+    border-color: white;
+    color: white;
+}
+
+.link-footer a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/*Efecto difuminado en la imagen*/
+.card-img {
+    filter: brightness(50%);
+}

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <!--   N  A  V  B  A  R   -->
+    <header data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container d-flex">
+                <a class="navbar-brand" href="#"> <img src="images/codoacodo.png" alt="logo-codo-a-codo" width="100px">
+                    Conf Bs As</a>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                    <ul class="navbar-nav mb-1 mb-lg-0 tex">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">La conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#oradores">Los oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#formulario">Conviérte en orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bg-green" style="color: rgb(70, 189, 46);" href="#comprar">Comprar tickets</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!--   C  A  R  O  U  S  E  L   -->
+    <main id="home">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/hawaii.jpg" width="100%" height="100%" class="d-block w-100 card-img" alt="/">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-md-block text-end"
+                            style="padding-bottom: 16.25rem; right: 150px;">
+                            <div class="row">
+                                <div class="col-7">
+
+                                </div>
+                                <div class="col-5">
+                                    <h5 style="font-size: 35px">Conf Bs As</h5>
+                                    <p style="font-size: 16px">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                                    <div>
+                                        <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
+                                        <button type="button" class="btn text-white" style="background-color:rgb(70, 189, 46);">Comprar tickets</button>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/hawaii2.jpg" class="d-block w-100 card-img" alt="/">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/hawaii3.jpg" class="d-block w-100 card-img" alt="/">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+    <!--  O  R  A  D  O  R  E  S  -->
+    <div class="mt-5 mb-3 text-center" style="font-size: small;" id="oradores">
+        CONOCE A LOS
+        <div class="fs-3" style="font-weight: 600;">
+            ORADORES
+        </div>  
+    </div>
+    <div class="d-flex justify-content-center gap-5 w-75 mx-auto" style="margin-bottom: 150px;">
+        <!-- S t e v e   J o b s -->
+        <div class="card">
+            <img src="images/steve.jpg" class="card-img-top" alt="/">
+            <div class="card-body">
+                <div>
+                    <button class="btn-card" style="background-color: #ffc107;">JavaScript</button>
+                    <button class="btn-card" style="background-color: rgba(47,157,172,255); color: rgb(254, 244, 244);">React</button>
+                </div>
+                <h5 class="card-title mb-2">Steve Jobs</h5> 
+                <p class="card-text" style="font-size: small;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur nostrum facere optio. Voluptates unde odit fugiat praesentium, quam doloribus in ex nam corrupti sit est nobis incidunt quos eos perferendis.</p>
+            </div>
+          </div>
+
+          <!-- B i l l    G a t e s -->
+          <div class="card">
+            <img src="images/bill.jpg" class="card-img-top" alt="/">
+            <div class="card-body">
+               <div>
+                 <button class="btn-card" style="background-color: #ffc107;">JavaScript</button>
+                 <button class="btn-card" style="background-color: rgba(47,157,172,255); color: rgb(254, 244, 244);">React</button>
+              </div> 
+              <h5 class="card-title mb-2">Bill Gates</h5>
+              <p class="card-text" style="font-size: small;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur nostrum facere optio. Voluptates unde odit fugiat praesentium, quam doloribus in ex nam corrupti sit est nobis incidunt quos eos perferendis.</p>
+            </div>
+          </div>
+
+          <!-- A d a    L o v e l a c e -->
+          <div class="card">
+            <img src="images/ada.jpeg" class="card-img-top" alt="/">
+            <div class="card-body">
+                <div>
+                    <button class="btn-card" style="background-color: rgb(125, 125, 125); color: rgb(254, 244, 244);">Negocios</button>
+                    <button class="btn-card" style="background-color: rgb(207, 33, 44); color: rgb(254, 244, 244);">Startups</button>
+                 </div>  
+              <h5 class="card-title mb-2">Ada Lovelace</h5>
+              <p class="card-text" style="font-size: small;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur nostrum facere optio. Voluptates unde odit fugiat praesentium, quam doloribus in ex nam corrupti sit est nobis incidunt quos eos perferendis.</p>
+            </div>
+          </div>
+    </div>
+
+
+
+    <!--   A  B  O  U  T   -->
+    <div class="row me-0" style="margin-bottom: 150px;" id="about">
+        <div class="col-6 pe-0">
+            <img src="images/honolulu.jpg" width="100%" alt="/">
+        </div>
+        <div class="col-6 text-white px-3" style="background-color: #353A40;">
+            <h4 class="pt-3">Bs As - Octubre</h4>
+            <p style="font-weight: 350; font-size: 15px;">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales cuidades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la cuidad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la cuidad (aproximadamente 600 km² de superficie).</p>
+            <button class="btn-about py-1" style="font-size: medium;">Conocé más</button>
+        </div>
+
+    </div>
+
+
+
+   <!--  F  O  R  M  U  L  A  R  I  O  --> 
+   <div class="mt-5 mb-3 text-center" style="font-size: small;" id="formulario">
+        CONVIÉRTETE EN UN
+        <div class="fs-3" style="font-weight: 600;">
+            ORADOR
+        </div>  
+    </div>
+    <div class="container w-75 mx-auto" style="margin-bottom: 150px;">
+        <p class="text-center">Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
+        <form action="" method="post">
+            <div class="row g-5">
+                <div class="col-md">
+                    <input type="text" name="nombre" id="nombre" class="form-control" required placeholder="Nombre">
+                </div>
+                <div class="col-md">
+                    <input type="text" name="apellido" id="apellido" class="form-control" required placeholder="Apellido">
+                </div>
+            </div>
+            <div class="col-24 mt-3 mb-4">
+                <textarea class="form-control form-control-lg" id="mensaje" type="text" placeholder="Sobre qué querés hablar?" style="height: 10rem;"></textarea>
+                <span style="font-size: small;">Recuerda incluir un título para tu charla</span>
+            </div>
+            <button type="submit" class="btn w-100 p-2 fs-4" style="background-color: rgb(70, 189, 46); color: whitesmoke;">Enviar</button>
+        </form>
+    </div>
+ 
+
+
+
+
+    <!--  T  I  C  K  E  T  S  -->
+    <div class="mt-5 mb-3 text-center" style="font-size: small;" id="formulario">
+        COMPRA TU 
+        <div class="fs-3" style="font-weight: 600;">
+            TICKET
+        </div>  
+    </div>
+    <div class="container w-75 mx-auto" style="margin-bottom: 150px;">
+        <form action="" method="post">
+            <p class="text-center">Inscripción a las conferencias</p>
+            <div class="row mb-3">
+                <div class="col-md">
+                    <input type="text" name="nombre" id="nombre" class="form-control" required placeholder="Nombre">
+                </div>
+                <div class="col-md">
+                    <input type="text" name="apellido" id="apellido" class="form-control" required placeholder="Apellido">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-7">
+                    <input type="email" name="email" id="email" class="form-control" required placeholder="Email">
+                </div>
+                <div class="col-md-5">
+                    <input type="number" name="telefono" id="telefono" class="form-control" required placeholder="Teléfono">    
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-md mb-3">
+                    <input type="number" name="cantEntradas" id="cantEntradas" onkeyup="calcularPrecioFinal()" class="form-control" placeholder="Cantidad de Entradas">
+                    <small>Costo entrada $1000</small>
+                </div>
+                <div class="col-md mb-3">
+                    <select class="form-select" name="porcDescuento" id="porcDescuento" onchange="calcularPrecioFinal()">
+                        <option value="10">Particular</option>
+                        <option value="30">Estudiante</option>
+                        <option value="50">Orador</option>
+                      </select>
+                </div>
+                <div class="col-md mb-3">
+                    <input type="text" name="precioFinal" id="precioFinal" class="form-control bg-secondary p-1" style="color: whitesmoke;" disabled placeholder="Costo de entradas">
+                </div>
+            </div>
+            <button type="submit" class="btn w-100 p-2 fs-4" style="background-color: rgb(70, 189, 46); color: whitesmoke;">Comprar</button>
+        </form>
+    </div>
+
+
+
+    <!--  F  O  O  T  E  R  -->
+    <footer class="d-flex justify-content-center align-items-center" style="background-color: rgb(28, 57, 71); padding: 30px 0; gap: 95px;" >
+        <div class="link-footer"><a href="/">Contáctanos</a></div>
+        <div class="link-footer"><a href="">Preguntas<br>frecuentes</a></div>
+        <div class="link-footer"><a href="/">Prensa</a></div>
+        <div class="link-footer"><a href="/">Conferencias</a></div>
+        <div class="link-footer"><a href="/">Términos y<br>condiciones</a></div>
+        <div class="link-footer"><a href="/">Privacidad</a></div>
+        <div class="link-footer"><a href="/">Estudiantes</a></div>
+    </footer>
+        
+    
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

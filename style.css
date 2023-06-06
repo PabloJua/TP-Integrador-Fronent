@@ -22,3 +22,25 @@
 .card-img {
     filter: brightness(50%);
 }
+
+.target-1{
+   text-align: center;
+   border: solid 1px #0d6efd;
+   padding: 20px 30px;
+}
+
+.target-2{
+    text-align: center;
+    border: solid 1px #198754;
+    padding: 20px 30px;
+ }
+ 
+ .target-3{
+    text-align: center;
+    border: solid 1px #fd7e14;
+    padding: 20px 30px;
+ }
+
+ small {
+    color: grey;
+ }

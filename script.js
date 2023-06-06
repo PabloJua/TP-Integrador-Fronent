@@ -6,8 +6,13 @@ function calcularPrecioFinal() {
 
     let precioFin = (cantEnt * 1000) - descTotal // Resto el descuento del precio total
 
-    document.getElementById("precioFinal").value = precioFin; // Coloco en el html el valor de las entradas con el descuento
-
+    let botonResumen = document.getElementById("boton-resumen");
+    botonResumen.addEventListener("click", (event) => {
+        event.preventDefault();
+        document.getElementById("precioFinal").innerHTML = `Total a pagar: $ ${precioFin}` // Coloco en el html el valor de las entradas con el descuento
+    })
+    
+    
 }   
 
 calcularPrecioFinal()

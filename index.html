@@ -187,18 +187,39 @@
  
 
 
+    <!--  D E S C U E N T O S  -->
+    <div class="d-flex justify-content-center gap-2">
+        <div class="target-1">
+            <p class="fw-semibold fs-4">Estudiante</p>
+            <p>Tienen un descuento</p>
+            <p class="fw-bolder">80%</p>
+            <small>* presentar documentación</small>
+        </div>
+        <div class="target-2">
+            <p class="fw-semibold fs-4">Trainee</p>
+            <p>Tienen un descuento</p>
+            <p class="fw-bolder">50%</p>
+            <small>* presentar documentación</small>
+        </div>
+        <div class="target-3">
+            <p class="fw-semibold fs-4">Junior</p>
+            <p>Tienen un descuento</p>
+            <p class="fw-bolder">15%</p>
+            <small>* presentar documentación</small>
+        </div>
+    </div>
+
 
 
     <!--  T  I  C  K  E  T  S  -->
     <div class="mt-5 mb-3 text-center" style="font-size: small;" id="formulario">
-        COMPRA TU 
-        <div class="fs-3" style="font-weight: 600;">
-            TICKET
+        VENTA
+        <div class="fs-2" style="font-weight: 600;">
+            VALOR DE TICKET $200
         </div>  
     </div>
     <div class="container w-75 mx-auto" style="margin-bottom: 150px;">
         <form action="" method="post">
-            <p class="text-center">Inscripción a las conferencias</p>
             <div class="row mb-3">
                 <div class="col-md">
                     <input type="text" name="nombre" id="nombre" class="form-control" required placeholder="Nombre">
@@ -208,30 +229,32 @@
                 </div>
             </div>
             <div class="row mb-3">
-                <div class="col-md-7">
-                    <input type="email" name="email" id="email" class="form-control" required placeholder="Email">
-                </div>
-                <div class="col-md-5">
-                    <input type="number" name="telefono" id="telefono" class="form-control" required placeholder="Teléfono">    
+                <div>
+                    <input type="email" name="email" id="email" class="form-control" required placeholder="Correo">
                 </div>
             </div>
             <div class="row mb-5">
-                <div class="col-md mb-3">
-                    <input type="number" name="cantEntradas" id="cantEntradas" onkeyup="calcularPrecioFinal()" class="form-control" placeholder="Cantidad de Entradas">
-                    <small>Costo entrada $1000</small>
+                <div class="col-md">
+                    <label for="" class="mb-2">Cantidad</label>
+                    <input type="number" name="cantEntradas" id="cantEntradas" onkeyup="calcularPrecioFinal()" class="form-control" placeholder="cantidad">
                 </div>
-                <div class="col-md mb-3">
+                <div class="col-md">
+                    <label for="" class="mb-2">Categoria</label>
                     <select class="form-select" name="porcDescuento" id="porcDescuento" onchange="calcularPrecioFinal()">
                         <option value="10">Particular</option>
                         <option value="30">Estudiante</option>
                         <option value="50">Orador</option>
                       </select>
                 </div>
-                <div class="col-md mb-3">
-                    <input type="text" name="precioFinal" id="precioFinal" class="form-control bg-secondary p-1" style="color: whitesmoke;" disabled placeholder="Costo de entradas">
-                </div>
             </div>
-            <button type="submit" class="btn w-100 p-2 fs-4" style="background-color: rgb(70, 189, 46); color: whitesmoke;">Comprar</button>
+            <div class="alert alert-primary mb-5 py-4" role="alert" name="precioFinal" id="precioFinal" disabled>
+             <!-- <p>Total a Pagar: $</p>    -->
+            </div>
+            <div class="d-flex gap-3">
+                <button type="submit" class="btn w-50 p-2 fs-4" style="background-color: rgb(70, 189, 46); color: whitesmoke;">Comprar</button>
+                <button type="submit" class="btn w-50 p-2 fs-4" style="background-color: rgb(70, 189, 46); color: whitesmoke;" id="boton-resumen">Resumen</button>
+            </div>
+            
         </form>
     </div>
 
